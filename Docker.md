@@ -14,6 +14,8 @@
 
 6. [How to start and use Metasploitable](#how-to-start-and-use-metasploitable)
 
+7. [How to copy image files to and from Kali](#how-to-copy-image-files-to-and-from-kali)
+
 ## Install Docker
 
 Please follow the instructions on the official Docker website to install Docker on your system.
@@ -98,7 +100,6 @@ docker start -i kalibox
 
 Please install the following tools in the container:
 
-- feh
 - nano
 - steghide
 - openssl
@@ -157,3 +158,31 @@ docker start -i metasploitable2
 ```
 
 You should now be able to do the labs without virtual machines on M1 and M2 macs.
+
+## How to copy image files to and from Kali
+
+During the labs you will need to copy image files to and from the Kali Linux container.
+
+To do this you can use the following commands:
+
+To the container:
+
+```bash
+docker cp <source> <container>:<destination>
+```
+
+From the container:
+
+```bash
+docker cp <container>:<source> <destination>
+```
+
+An example for copying a file from the container to the host:
+
+```bash
+docker cp kalibox:/example.png ./Downloads
+```
+
+This would copy the file "example.png" from the container "kalibox" root folder ('/') to the folder "Downloads" in your home directory, provided the terminal is in your home directory. A common symbol for the home directory is "~".
+
+Note: this needs to be done in a separate terminal, not in the container's interactive terminal.
