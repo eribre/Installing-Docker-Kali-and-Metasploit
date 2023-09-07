@@ -98,7 +98,10 @@ docker start kalibox
 
 Please install the following tools in the container:
 
-- nmap
+- feh
+- nano
+- steghide
+- openssl
 
 You can install them with the following command:
 
