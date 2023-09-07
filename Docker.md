@@ -93,7 +93,7 @@ This is necessary to install all the tools you will need for the labs.
 When you want to start the container again, you can do so with the following command:
 
 ```bash
-docker start kalibox
+docker start -i kalibox
 ```
 
 Please install the following tools in the container:
@@ -153,7 +153,7 @@ Just like with Kali Linux, you can stop the container with either
 You can start the container again with the following command:
 
 ```bash
-docker start metasploitable2
+docker start -i metasploitable2
 ```
 
 You should now be able to do the labs without virtual machines on M1 and M2 macs.
