@@ -16,6 +16,8 @@
 
 7. [How to copy image files to and from Kali](#how-to-copy-image-files-to-and-from-kali)
 
+8. [When you are done](#when-you-are-done)
+
 ## Install Docker
 
 Note: Before you start, if a command starts with the word "docker" it needs to be run in outside of the container's interactive terminal. If it does not start with "docker", chances are it needs to be run in the container's interactive terminal.
@@ -198,3 +200,11 @@ Note: this needs to be done in a separate terminal, not in the container's inter
 ---
 
 You should now be able to do the labs without virtual machines on M1 and M2 macs.
+
+## When you are done
+
+When you are done with the labs for the day you should stop the containers as explained earlier, as they will use up resources on your computer.
+
+You should also shutdown the docker desktop app, as it will also use up resources. This can be done through the docker icon in the top bar of your mac's display (the one that kind of looks like a whale).
+
+When you are done with the semester you can delete the containers and images using the docker desktop user interface.
