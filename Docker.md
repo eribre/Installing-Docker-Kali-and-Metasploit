@@ -138,7 +138,7 @@ You can now start the container again and you are ready to install Metasploitabl
 
 ## Install Metasploitable
 
-You now need to download a Metasploitable image from the Docker Hub. This is done with the following command:
+You now need to download a Metasploitable image from the Docker Hub. This is done with the following command (again in a terminal app and not in the container):
 
 ```bash
 docker pull tleemcjr/metasploitable2
