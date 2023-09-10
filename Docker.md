@@ -140,7 +140,9 @@ You can now start the container again and you are ready to install Metasploitabl
 
 ## Install Metasploitable
 
-You now need to download a Metasploitable image from the Docker Hub. This is done with the following command (again in a terminal app and not in the container):
+First make sure you are in the Macbook terminal and not the Kali interactive terminal. This can usualy be seen by looking to the left of the cursor. If it says something like "root@attacker" you are in the Kali interactive terminal. Otherwise you are most likely in the Macbook terminal.
+
+You now need to download a Metasploitable image from the Docker Hub. This is done with the following command:
 
 ```bash
 docker pull tleemcjr/metasploitable2
