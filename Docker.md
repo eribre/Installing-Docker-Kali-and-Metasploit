@@ -26,7 +26,7 @@ Make sure you choose the version for your architecture. (Intel or Apple Silicon)
 
 ## Setup Docker Network
 
-Once Docker is installed, you need to create a network for the containers to safely communicate with each other. This is done with the following command:
+Once Docker is installed, you need to create a network for the containers to safely communicate with each other. This is done with the following command in a terminal app of your choice (e.g. Terminal, iTerm, Kitty, etc.):
 
 ```bash
 docker network create pentest --internal
@@ -84,7 +84,7 @@ exit
 docker stop kalibox
 `.
 
-At this point you will need to change the network of the container to the "apt" network. This is done with the following command:
+Now you will need to change the network of the container to the "apt" network. This is done with the following command once the container is stopped:
 
 ```bash
 docker network connect apt kalibox
@@ -123,6 +123,8 @@ You can also chain multiple tool names together (seperated by a space) to instal
 ```bash
 apt install <toolname1> <toolname2> <toolname3>
 ```
+
+Note: toolnames are written without <>. It is just to indicate that you need to change the name.
 
 When that is done, shutdown the container and then change the network back to "pentest" with the following command:
 
