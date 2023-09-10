@@ -118,6 +118,8 @@ Then run the following command changing the name of the tool to the one you want
 apt install <toolname>
 ```
 
+Press "y" then enter or just enter when asked if you want to install the tool.
+
 You can also chain multiple tool names together (seperated by a space) to install them all at once.
 
 ```bash
