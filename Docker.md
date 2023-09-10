@@ -128,7 +128,7 @@ You can also chain multiple tool names together (seperated by a space) to instal
 apt install <toolname1> <toolname2> <toolname3>
 ```
 
-Note: toolnames are written without <>. It is just to indicate that you need to change the name.
+**Note:** toolnames are written without <>. It is just to indicate that you need to change the name.
 
 When that is done, shutdown the container and then change the network back to "pentest" with the following command:
 
@@ -151,7 +151,7 @@ docker pull tleemcjr/metasploitable2
 Now create the container with the following command:
 
 ```bash
-sudo docker run --network=pentest -h victim -it --name metasploitable2 tleemcjr/metasploitable2
+docker run --network=pentest -h victim -it --name metasploitable2 tleemcjr/metasploitable2
 ```
 
 ## How to start and use Metasploitable
@@ -177,7 +177,7 @@ To the container:
 docker cp <source> <container>:<destination>
 ```
 
-Note: again the <> are not part of the command. They are just there to indicate that you need to change them to the correct values/inputs.
+**Note:** again the <> are not part of the command. They are just there to indicate that you need to change them to the correct values/inputs.
 
 From the container:
 
