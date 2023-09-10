@@ -18,6 +18,8 @@
 
 ## Install Docker
 
+Note: Before you start, if a command starts with the word "docker" it needs to be run in outside of the container's interactive terminal. If it does not start with "docker", chances are it needs to be run in the container's interactive terminal.
+
 Please follow the instructions on the official Docker website to install Docker on your system.
 
 <https://docs.docker.com/desktop/install/mac-install/>
