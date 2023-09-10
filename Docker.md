@@ -173,6 +173,8 @@ To the container:
 docker cp <source> <container>:<destination>
 ```
 
+Note: again the <> are not part of the command. They are just there to indicate that you need to change them to the correct values/inputs.
+
 From the container:
 
 ```bash
